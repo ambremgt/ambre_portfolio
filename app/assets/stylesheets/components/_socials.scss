@@ -1,0 +1,13 @@
+.social-container {
+  position: absolute;
+  left: calc(100vw - 85px);
+  z-index: 40;
+}
+
+.social-link{
+  height: 200px;
+  width: 100px;
+  background: #f98f8f;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
