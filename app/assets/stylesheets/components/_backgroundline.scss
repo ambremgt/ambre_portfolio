@@ -1,0 +1,45 @@
+
+// CIRCLE BACKGROUND
+.circle-container {
+  top: 50%;
+  height: 45vw;
+  width: 45vw;
+  transform: translate(-95%,-50%);
+  position: absolute;
+  left: 98%;
+  z-index: 40;
+}
+
+.circle {
+  border: 1px solid $beige;
+  border-radius: 50%;
+  background-color: $ivoire;
+}
+
+
+// LINES BACKGROUND
+.line-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.lines {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: $beige;
+  top: 0;
+}
+
+.line1 {
+  left: 25vw;
+}
+
+.line2 {
+  left: 50vw;
+}
+
+.line3 {
+  left: 75vw;
+}
