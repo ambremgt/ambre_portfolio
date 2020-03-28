@@ -19,13 +19,13 @@ a {
   color: $black;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px;
     &:hover {
       color: $rouille;
       letter-spacing: 5px;
       transition: 0.9s;
-      font-size: 13px;
+      font-size: 12px;
     }
 }
 .btn-rotate {
