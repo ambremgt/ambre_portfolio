@@ -2,12 +2,28 @@
   position: absolute;
   left: calc(100vw - 85px);
   z-index: 40;
-}
-
-.social-link{
   height: 200px;
   width: 100px;
-  background: #f98f8f;
+  background: $dark-beige;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
+}
+
+.list-social-icons {
+  margin: 24% auto;
+  text-decoration: none;
+  list-style-type: none;
+  position: absolute;
+  left: 11px;
+}
+
+.social-icon {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: $black;
+  &:hover {
+    color: $corail;
+    transition: 0.6s;
+    text-decoration: none;
+    }
 }
