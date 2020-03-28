@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="home-bio col-12 col-md-5 col-sm-10 order-1 order-md-0">
-    <div class="main-headline">Hi, I am Ambre,</div>
+    <div class="main-headline">Hey, I am Ambre,</div>
     <div class="main-bio">a freelance full-stack web developer and Digital Product Designer based in Paris.
     <br>I specialize in UI/UX Design and Visual Development.</div>
   </div>
@@ -22,5 +22,14 @@
       <li><%= link_to "", 'https://dribbble.com/Ambremgt', target: '_blank', class: "fab fa-dribbble fa-lg social-icon"%></li>
     </ul>
   </div>
+
+<%= link_to '#' do %>
+  <div class="scroll-container">
+    <h3 class="btn-scroll">SCROLL</h3>
+      <%= image_tag 'scroll circle.png', height: 35, width: 35, class: 'circle-scroll scroll-move'%>
+      <%= image_tag 'scroll arrow.png', height: 34, width: 8, class: 'arrow-scroll scroll-move' %>
+    <% end %>
+  </div>
+
 </div>
 

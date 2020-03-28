@@ -1,0 +1,35 @@
+.scroll-container {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  transition: 1.5s;
+}
+
+.arrow-scroll {
+    position: absolute;
+    left: 41%;
+    bottom: 22px;
+    transition: 1s;
+}
+
+.btn-scroll {
+    position: absolute;
+    bottom: 55px;
+    transition: 1.5s;
+    left: -13px;
+}
+
+.circle-scroll {
+  transition: 1.5s;
+}
+
+.scroll-container:hover {
+  .arrow-scroll {
+    transform: translate(0,15%);
+    }
+  .circle-scroll {
+    transform: translate(0%,-15%);
+  }
+}
+
+
