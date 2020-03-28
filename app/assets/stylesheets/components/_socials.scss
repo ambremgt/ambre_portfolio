@@ -4,7 +4,7 @@
   z-index: 40;
   height: 200px;
   width: 100px;
-  background: $dark-beige;
+  background: $beige;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
 }
@@ -22,8 +22,9 @@
   margin-bottom: 18px;
   color: $black;
   &:hover {
-    color: $corail;
-    transition: 0.6s;
+    transition: 0.3s;
+    color: $black;
     text-decoration: none;
+    opacity: 0.5;
     }
 }
