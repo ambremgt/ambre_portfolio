@@ -5,12 +5,15 @@
       <div class="lines line1"></div>
       <div class="lines line2"></div>
       <div class="lines line3"></div>
+      <div class="lines line4"></div>
     </div>
   </div>
   <div class="home-bio col-12 col-md-5 col-sm-10 order-1 order-md-0">
     <div class="main-headline">Hey, I am Ambre,</div>
     <div class="main-bio">a freelance full-stack web developer and Digital Product Designer based in Paris.
     <br>I specialize in UI/UX Design and Visual Development.</div>
+    <div>
+</div>
   </div>
   <div class="image-block col-12 col-md-3 order-0 order-md-1">
     <%= image_tag ('ambrewagon.jpg'), class: 'profile-picture moving_shape border-move bg-move'  %>
@@ -31,7 +34,23 @@
     <% end %>
   </div>
 
+
 </div>
 
 <div class="wrap-2"><canvas id="liquid">
 </canvas></div>
+
+
+<div style="margin-top: 100px;">
+  <% @projets.each do |projet| %>
+    <%= link_to projet.name, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.description, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.category, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.field, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.context, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.year, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.url, projet_path(projet), class: "btn-main" %>
+    <br>
+  <% end %>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>

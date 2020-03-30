@@ -39,20 +39,24 @@
 }
 
 .line1 {
-  left: 25vw;
+  left: 20vw;
 }
 
 .line2 {
-  left: 50vw;
+  left: 40vw;
 }
 
 .line3 {
-  left: 75vw;
+  left: 60vw;
+}
+
+.line4 {
+  left: 80vw;
 }
 
 .wrap-2{
-    position:fixed;
     z-index:2;
+    position: absolute;
     top:0;
     left:0;
     overflow:hidden;
@@ -63,5 +67,5 @@
 }
 canvas{
     width:100%;
-    height:100%;
+    height:100vh;
 }
