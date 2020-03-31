@@ -45,12 +45,12 @@
 .home-projet-name-container {
   z-index: 1;
   position: absolute;
-  top: 15%;
+  top: 0%;
   left: 20%
 }
 
 @media(max-width: 770px) {
-  .home-projet-name-container .underline-name  {
+  .home-projet-name-container  {
     top: 0;
     left: 0;
   }
@@ -72,8 +72,7 @@
 .underline-name {
   z-index: 1;
   position: absolute;
-  top: 32%;
-  left: 18px;
+  left: 0px;
 }
 
 .underline-category {
@@ -83,8 +82,8 @@
 // HOME CATEGORY PROJECT
 .home-projet-category {
   position: absolute;
-  bottom: 30%;
-  right: 30%;
+  bottom: 20%;
+  right: 25%;
   font-weight: 600;
 }
 
@@ -93,6 +92,10 @@
   width: auto;
   text-align: center;
   margin-top: 11%;
+}
+
+ .image-cover-home {
+  height: 600px;
 }
 
 
