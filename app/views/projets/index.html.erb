@@ -1,1 +1,12 @@
 BONJOUR
+  <% @projets.each do |projet| %>
+    <%= link_to projet.name, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.description, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.category, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.field, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.context, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.year, projet_path(projet), class: "btn-main" %>
+    <%= link_to projet.url, projet_path(projet), class: "btn-main" %>
+    <%= image_tag(projet.cover, height: '600') %>
+    <br>
+  <% end %>
