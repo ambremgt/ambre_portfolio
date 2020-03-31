@@ -6,6 +6,7 @@
       <div class="lines line2"></div>
       <div class="lines line3"></div>
       <div class="lines line4"></div>
+      <div class="lines line5"></div>
     </div>
   </div>
   <div class="home-bio col-12 col-md-5 col-sm-10 order-1 order-md-0">
@@ -41,16 +42,21 @@
 </canvas></div>
 
 
-<div style="margin-top: 100px;">
-  <% @projets.each do |projet| %>
-    <%= link_to projet.name, projet_path(projet), class: "btn-main" %>
-    <%= link_to projet.description, projet_path(projet), class: "btn-main" %>
-    <%= link_to projet.category, projet_path(projet), class: "btn-main" %>
-    <%= link_to projet.field, projet_path(projet), class: "btn-main" %>
-    <%= link_to projet.context, projet_path(projet), class: "btn-main" %>
-    <%= link_to projet.year, projet_path(projet), class: "btn-main" %>
-    <%= link_to projet.url, projet_path(projet), class: "btn-main" %>
-    <br>
-  <% end %>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+<% @projets.each do |projet| %>
+  <div class="slide-home">
+    <div class="slide-home-wrapper">
+      <div class="home-projet-name-container home-projet-name">
+        <%= projet.name.downcase %>
+        <div class="underline underline-name"></div>
+      </div>
+      <div class="home-projet-cover">
+        <%= link_to image_tag(projet.cover, height: '600'), projet_path(projet) %>
+      </div>
+      <div class="home-projet-category">
+        <div class="underline underline-category"></div>
+        <%= projet.category.capitalize %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
