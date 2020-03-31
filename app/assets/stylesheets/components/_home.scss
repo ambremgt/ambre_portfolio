@@ -49,10 +49,26 @@
   left: 20%
 }
 
-@media(max-width: 770px) {
+@media(max-width: 950px) {
   .home-projet-name-container  {
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 100%;
+  left: -2%;
+  width: 100vw;
+  text-align: center;
+  }
+  .underline-name {
+    margin-left: 45%;
+    margin-top: 20px;
+  }
+  .home-projet-category  {
+    display: none;
+  }
+  .home-projet-name {
+    line-height: 100px
+  }
+  .line2, .line4 {
+    display: none;
   }
 }
 
@@ -92,6 +108,7 @@
   width: auto;
   text-align: center;
   margin-top: 11%;
+  margin-right: 20px;
 }
 
  .image-cover-home {
