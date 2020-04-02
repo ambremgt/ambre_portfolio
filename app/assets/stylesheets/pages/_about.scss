@@ -1,0 +1,65 @@
+.main-letter {
+  font-size: 300px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.main-title {
+  font-size: 46px;
+  font-weight: 800;
+  font-family: "Playfair Display";
+  line-height: 1;
+}
+
+.second-title {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: right;
+  margin-top: 100px;
+  font-weight: 400;
+}
+
+.bio-about {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: right;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.about-picture {
+  max-width: 44vw;
+  float: right;
+}
+
+.about-bio-container {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+.about-container-image {
+  position: fixed;
+  right: 0;
+  top: 7%;
+  padding-right: 0;
+}
+
+@media(max-width: 768px) {
+  .about-picture {
+    max-width: 83vw;
+    float: none;
+  }
+  .about-container-image {
+    text-align: center;
+    position: absolute;
+    right: 9px;
+
+  }
+  .about-bio-container {
+    left: 0;
+    top: 110%;
+    padding: 56px;
+  }
+}
