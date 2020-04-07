@@ -31,3 +31,32 @@ a {
 .btn-rotate {
   transform: rotate(-90deg);
 }
+
+.contact-btn-area {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+.btn-home {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  margin-left: 38px;
+  margin-top: 15px;
+}
+
+
+.btn-transparent {
+  font-size: 34px;
+  font-weight: 300px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $black;
+  font-family: sans-serif;
+  color: transparent;
+  &:hover {
+    color: transparent;
+  }
+}
