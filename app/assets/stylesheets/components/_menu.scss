@@ -2,7 +2,7 @@
   left: 0;
   z-index: 3;
   height: 100vh;
-  width: 5vw;
+  width: 8vw;
   position: fixed;
   display: flex;
   margin-top: auto;
@@ -18,18 +18,3 @@
   -ms-flex-align: center;
 }
 
-.contact-btn-area {
-  position: absolute;
-  z-index: 3;
-  right: 0;
-  margin-right: 50px;
-  margin-top: 15px;
-}
-
-.btn-home {
-  position: absolute;
-  z-index: 3;
-  left: 0;
-  margin-left: 50px;
-  margin-top: 15px;
-}

@@ -21,6 +21,19 @@ camea = Projet.new(
                   )
 camea.save!
 
+monurent = Projet.new(
+                    name: "Monurent",
+                    description: "Want to rent amazing moument all around the wordl ?",
+                    category: "Web",
+                    cover: "Z.png",
+                    field: "Back and front developpement, UX UI Design",
+                    context: "Le Wagon project.",
+                    year: "2020",
+                    gif: "http://www.coralinecolasse.fr/wp-content/uploads/2017/07/Grand8.gif",
+                    url: "https://monurent.herokuapp.com/"
+                  )
+monurent.save!
+
 
 cocktail = Projet.new(
                     name: "Fancy Cocktail",
@@ -35,16 +48,3 @@ cocktail = Projet.new(
                   )
 cocktail.save!
 
-
-monurent = Projet.new(
-                    name: "Monurent",
-                    description: "Want to rent amazing moument all around the wordl ?",
-                    category: "Web",
-                    cover: "Z.png",
-                    field: "Back and front developpement, UX UI Design",
-                    context: "Le Wagon project.",
-                    year: "2020",
-                    gif: "http://www.coralinecolasse.fr/wp-content/uploads/2017/07/Grand8.gif",
-                    url: "https://monurent.herokuapp.com/"
-                  )
-monurent.save!

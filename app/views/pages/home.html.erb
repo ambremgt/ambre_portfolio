@@ -49,8 +49,8 @@
         <%= projet.name.downcase %>
         <div class="underline underline-name"></div>
       </div>
-      <div class="home-projet-cover image-cover-home">
-        <%= link_to image_tag(projet.cover, height: '600'), projet_path(projet) %>
+      <div class="home-projet-cover">
+        <%= link_to image_tag(projet.cover, class: 'image-cover-home'), projet_path(projet) %>
       </div>
       <div class="home-projet-category">
         <div class="underline underline-category"></div>
