@@ -1,6 +1,6 @@
 .social-container {
   position: fixed;
-  left: calc(100vw - 85px);
+  left: calc(100vw - 8.5vw);
   z-index: 3;
   height: 200px;
   width: 100px;
@@ -14,16 +14,21 @@
   text-decoration: none;
   list-style-type: none;
   position: absolute;
-  left: 11px;
+  left: 8px;
 }
 
 .social-icon {
   margin-top: 18px;
   margin-bottom: 18px;
   color: $black;
+  transition: 1s color ease;
   &:hover {
     transition: 0.3s;
     color: $rouille;
     text-decoration: none;
     }
+}
+
+.social-icon-red {
+  color: $light-red;
 }

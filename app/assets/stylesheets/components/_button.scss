@@ -15,33 +15,42 @@ a {
 // }
 
 .btn-main {
-  transition: 0.8s;
+  transition: 3s;
   color: $black;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 17px;
   padding: 10px;
     &:hover {
-      color: $rouille;
-      letter-spacing: 5px;
-      transition: 0.9s;
-      font-size: 11px;
+    color: $rouille;
+    letter-spacing: 4px;
+    transition: 1.5s;
+    font-size: 13px;
     }
 }
+
+.btn-main-color {
+  color: $light-red;
+}
+
 .btn-rotate {
   transform: rotate(-90deg);
 }
 
+.btn-main-square {
+  border: solid 0.5px $black;
+}
+
 .contact-btn-area {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   right: 0;
-  margin-right: 50px;
-  margin-top: 15px;
+  margin-right: 2.8vh;
+  margin-top: 3.5vh;
 }
 
 .btn-home {
-  position: absolute;
+  position: fixed;
   z-index: 4;
   left: 0;
   margin-left: 38px;
@@ -50,13 +59,12 @@ a {
 
 
 .btn-transparent {
-  font-size: 34px;
-  font-weight: 300px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: $black;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 700;
   font-family: sans-serif;
-  color: transparent;
+  color: $black;
   &:hover {
-    color: transparent;
+    color: $black;
   }
 }

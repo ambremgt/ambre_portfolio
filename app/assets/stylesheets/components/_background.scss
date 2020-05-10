@@ -32,15 +32,23 @@
 }
 
 .lines {
+  transition: 3s background-color ease;
   position: absolute;
   height: 100%;
   width: 1px;
-  background-color: $dark-beige;
   top: 0;
 }
 
+.lines-black {
+  background-color: $light-black;
+}
+
+.lines-red {
+  background-color: $light-red;
+}
+
 .line1 {
-  left: 16.67vw;
+  left: 9vw;
 }
 
 .line2 {
@@ -56,8 +64,30 @@
 }
 
 .line5 {
-  left: 84vw;
+  left: 91vw;
 }
+
+.lines-horizontal {
+  transition: 3s background-color ease;
+  position: absolute;
+}
+
+
+.line-h1 {
+  left: 91vw;
+  height: 1px;
+  width: 10%;
+  top: 10vh;
+}
+
+.line-h2 {
+  left: 95vw;
+  height: 1.5px;
+  width: 2%;
+  top: 80vh;
+}
+
+
 
 .wrap-2{
     z-index:2;
