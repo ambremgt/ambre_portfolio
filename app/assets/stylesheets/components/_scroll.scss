@@ -8,17 +8,17 @@
 
 .arrow-scroll {
     position: absolute;
-    left: 41%;
-    bottom: 22px;
+    left: 47%;
+    bottom: 30px;
     transition: 1s;
 }
 
 .btn-scroll {
   font-size:13px;
-    position: absolute;
-    bottom: 55px;
-    transition: 1.5s;
-    left: -10px;
+  position: absolute;
+  bottom: 55px;
+  transition: 1.5s;
+  left: -10px;
 }
 
 .circle-scroll {
@@ -33,3 +33,6 @@
     transform: translate(0%,-15%);
   }
 }
+
+
+

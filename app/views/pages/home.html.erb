@@ -1,24 +1,23 @@
-<div class="home-content row align-items-center d-flex justify-content-center">
-  <div class="home-background">
-<!--     <div class="circle-container circle"></div>
- -->    <div class="line-container">
-      <div class="lines line1"></div>
-      <div class="lines line2"></div>
-      <div class="lines line3"></div>
-      <div class="lines line4"></div>
-      <div class="lines line5"></div>
+<body style="background: linear-gradient(0deg, rgba(246,243,243,1) 0%, rgba(234,228,226,1) 100%);">
+
+</body>
+
+<div class="home-content align-items-center d-flex justify-content-center">
+
+  <div class="navtop">
+    <div class="d-flex justify-content-between">
+      <div class="am20">AM20.</div>
+      <div class="navtop-circle"></div>
     </div>
   </div>
-  <div class="home-bio col-12 col-md-5 col-sm-10 order-1 order-md-0">
-    <div class="main-headline">Hey, I am Ambre,</div>
-    <div class="main-bio">a freelance full-stack web developer and Digital Product Designer based in Paris.
-    <br>I specialize in UI/UX Design and Visual Development.</div>
-  <div>
-</div>
+
+  <div class="line-container">
+    <div class="lines lines-black line1"></div>
+    <div class="lines lines-black line5"></div>
+    <div class="lines-horizontal lines-black line-h1"></div>
+    <div class="lines-horizontal lines-black line-h2"></div>
   </div>
-  <div class="image-block col-12 col-md-3 order-0 order-md-1">
-    <%= image_tag ('ambrewagon.jpg'), class: 'profile-picture moving_shape border-move bg-move'  %>
-  </div>
+
   <div class="social-container">
     <ul class="list-social-icons">
       <li><%= link_to "", 'https://github.com/ambremgt', target: '_blank', class: "fab fa-github fa-lg social-icon"%></li>
@@ -27,19 +26,32 @@
     </ul>
   </div>
 
-<%= link_to '#' do %>
   <div class="scroll-container">
-    <h3 class="btn-scroll">SCROLL</h3>
-      <%= image_tag 'scroll circle.png', height: 35, width: 35, class: 'circle-scroll scroll-move'%>
-      <%= image_tag 'scroll arrow.png', height: 34, width: 8, class: 'arrow-scroll scroll-move' %>
-    <% end %>
+    <%= image_tag 'Ellipse.png', height: 45, width: 45, class: 'circle-scroll scroll-move scroll'%>
+    <%= image_tag 'Arrow.png', height: 20, width: 5, class: 'arrow-scroll scroll-move scroll' %>
   </div>
-
-
 </div>
 
 <div class="wrap-2"><canvas id="liquid">
 </canvas></div>
+
+
+
+<div class="home-content row align-items-center d-flex justify-content-center">
+
+
+  <div class="home-bio col-12 col-md-5 col-sm-10 order-1 order-md-0">
+    <div class="main-headline">Hey, I am Ambre,</div>
+    <div class="main-bio">a freelance full-stack web developer and Digital Product Designer based in Paris.
+    <br>I specialize in UI/UX Design and Visual Development.</div>
+  </div>
+
+  <div class="image-block col-12 col-md-3 order-0 order-md-1">
+    <%= image_tag ('ambrewagon.jpg'), class: 'profile-picture moving_shape border-move bg-move'  %>
+  </div>
+
+</div>
+
 
 
 <% @projets.each do |projet| %>

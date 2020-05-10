@@ -242,5 +242,5 @@
     },
     n = i.screen.init("liquid", null, !0),
     a = n.ctx;
-  n.resize(), (t = new e(n.width, n.height, 6, "#fbe9e2", "#fbe9e2")), o();
+  n.resize(), (t = new e(n.width, n.height, 6, "transparent", "transparent")), o();
 })();
