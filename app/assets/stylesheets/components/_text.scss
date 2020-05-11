@@ -1,25 +1,58 @@
-.main-headline, .main-bio {
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  color: $light-red;
   font-family: $serif;
-  margin-left: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 60px;
 }
 
-.main-headline {
-  font-size: 54px;
-  font-weight: 800;
-}
-
-.main-bio {
-  font-size: 20px;
-  font-weight: 200;
-}
-
-h3 {
-  color: $black;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 14px;
+h6 {
+  color: $light-red;
+  font-family: $sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 60px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.red-text {
+  font-size: 24px;
+  font-weight: 200;
+  color: $light-red;
+}
+
+.red-text_italic {
+  font-size: 24px;
+  font-weight: 200;
+  color: $light-red;
+  font-style: italic;
+}
+
+.red-text-min {
+  font-size: 20px;
+  font-weight: 200;
+  color: $light-red;
+}
+
+.red-text-num {
+  font-size: 20px;
+  font-weight: 800;
+  color: $light-red;
+}
+
+.serif-text {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: $black;
+  font-family: $serif;
 }

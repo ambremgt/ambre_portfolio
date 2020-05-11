@@ -6,23 +6,6 @@
   z-index: -1
 }
 
-// CIRCLE BACKGROUND
-.circle-container {
-  top: 50%;
-  height: 45vw;
-  width: 45vw;
-  transform: translate(-95%,-50%);
-  position: absolute;
-  left: 98%;
-  z-index: 1;
-}
-
-.circle {
-  border: 1px solid $dark-beige;
-  border-radius: 50%;
-  background-color: $ivoire;
-}
-
 
 // LINES BACKGROUND
 .line-container {
@@ -40,7 +23,7 @@
 }
 
 .lines-black {
-  background-color: $light-black;
+  background-color: $black;
 }
 
 .lines-red {
@@ -81,8 +64,8 @@
 }
 
 .line-h2 {
-  left: 95vw;
-  height: 1.5px;
+  left: 94.9vw;;
+  height: 1px;
   width: 2%;
   top: 80vh;
 }

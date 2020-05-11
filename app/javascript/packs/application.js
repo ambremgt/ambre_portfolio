@@ -14,11 +14,14 @@ import { linesOnScroll } from '../components/line';
 
 import { menuOnScroll } from '../components/red_menu';
 
+import { navtopOnScroll } from '../components/navtop';
+
 initUpdateNavbarOnScroll();
 
 linesOnScroll();
 
 menuOnScroll();
 
-scrollToElem();
+navtopOnScroll();
 
+scrollToElem();

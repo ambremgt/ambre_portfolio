@@ -1,3 +1,4 @@
+
 // Specific CSS for your home-page
 .home-content {
   margin-top: auto;
@@ -5,33 +6,22 @@
   height: 100vh;
   position: relative;
   width: 100vw;
+  background: linear-gradient(0deg, rgba(248, 245, 245, 1) 0%, rgba(234,228,226,1) 100%);
 }
 
-// HOME BIO
 .home-bio {
-  margin-bottom: 30px;
-  z-index: 3;
-}
-
-.main-headline, .main-bio {
-  font-family: $serif;
-  margin-left: 20px;
-}
-
-.main-headline {
-  font-size: 54px;
-  font-weight: 800;
-}
-
-.main-bio {
-  font-size: 20px;
-  font-weight: 200;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+  background-color: rgba(248, 245, 245, 1);
+  z-index: -1;
 }
 
 // HOME SLIDE PROJECT
 .slide-home {
   width: 100vw;
-  height: 100vh;
   position: relative;
   float: left;
 }
@@ -123,3 +113,49 @@
     margin-top: 20%;
   }
 }
+
+// HOME PROJECTS SECTION
+
+
+.home-projects-details {
+  padding-top: 10vh;
+}
+
+.some-projects {
+  margin-right: 21%;
+  margin-top: 4%;
+}
+
+.wid {
+  margin-right: 14%;
+  margin-top: 2%;
+}
+
+.step-home {
+  position: relative;
+  top: 13vh;
+  left: 67%;
+  line-height: 2.7;
+  max-width: 200px;
+}
+
+.home-step {
+  line-height: 2.7;
+  position: relative;
+  left: 23%;
+  margin-top: 2%
+}
+
+.circle-home {
+  border: 1px solid $light-red;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 30vw;
+  width: 30vw;
+}
+
+.circle-home-container {
+  position: absolute;
+  right: 11%;
+}
+

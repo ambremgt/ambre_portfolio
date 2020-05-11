@@ -1,9 +1,6 @@
-<body style="background: linear-gradient(0deg, rgba(246,243,243,1) 0%, rgba(234,228,226,1) 100%);">
 
-</body>
 
 <div class="home-content align-items-center d-flex justify-content-center">
-
   <div class="navtop">
     <div class="d-flex justify-content-between">
       <div class="am20">AM20.</div>
@@ -27,8 +24,8 @@
   </div>
 
   <div class="scroll-container">
-    <%= image_tag 'Ellipse.png', height: 45, width: 45, class: 'circle-scroll scroll-move scroll'%>
-    <%= image_tag 'Arrow.png', height: 20, width: 5, class: 'arrow-scroll scroll-move scroll' %>
+    <div class="serif-text" style="margin-bottom: 3vh;">Scroll</div>
+    <%= image_tag 'linescroll.png', height: 60, width: 2, class: 'arrow-scroll' %>
   </div>
 </div>
 
@@ -37,25 +34,61 @@
 
 
 
-<div class="home-content row align-items-center d-flex justify-content-center">
+<div class="home-bio row align-items-center d-flex justify-content-center">
+  <div class="col-12 col-md-4 col-sm-10 order-1 order-md-0" style="margin-left: 5vh;">
+    <div>
+      <div style="display: flex;">
+        <h1>DESIGNER <h6> &</h6></h1>
+      </div>
+      <h1>DEVELOPER</h1>
+    </div>
+    <div class="red-text" style="margin-top: 5vh;">
+      <p>Hi, I'm Ambre,</p>
+      <p>a freelance full-stack web developer and</p>
+      <p>Digital Product Designer based in Paris. </p>
+      <p>I specialize in UI/UX Design and visual</p>
+      <p>development.</p>
+      <p><strong>My goal is to help people build better</p>
+      <p>and more meaningful products.</strong></p>
 
+      <%= link_to '/about' do %>
+        <div class="scroll-container-more">
+          <%= image_tag 'red-ellipse.png', height: 70, width: 70, class: 'circle-scroll-more float-right' %>
+          <%= image_tag 'red-arrow.png', height: 20, width: 20, class: 'arrow-scroll-incline float-right' %>
+        </div>
+      <% end %>
 
-  <div class="home-bio col-12 col-md-5 col-sm-10 order-1 order-md-0">
-    <div class="main-headline">Hey, I am Ambre,</div>
-    <div class="main-bio">a freelance full-stack web developer and Digital Product Designer based in Paris.
-    <br>I specialize in UI/UX Design and Visual Development.</div>
+    </div>
   </div>
-
-  <div class="image-block col-12 col-md-3 order-0 order-md-1">
-    <%= image_tag ('ambrewagon.jpg'), class: 'profile-picture moving_shape border-move bg-move'  %>
+  <div class="image-block col-12 col-md-4 order-0 order-md-1">
+    <%= image_tag ('ambrewagon.jpg'), class: 'profile-picture'  %>
   </div>
-
 </div>
 
-
+  <div class="home-projects-details d-flex flex-column">
+    <h1 class="d-flex justify-content-end some-projects">SOME PROJECTS</h1>
+    <div class="d-flex justify-content-end red-text_italic wid">What I do?</div>
+    <div class="red-text-min mx-auto home-step">
+      <div style="display: flex;">
+        <p class="red-text-num">01. </p>
+        <p>Development</p>
+      </div>
+      <div style="display: flex;">
+        <p  class="red-text-num">02. </p>
+        <p>Visual Identity</p>
+      </div>
+      <div style="display: flex;">
+        <p  class="red-text-num">03. </p>
+        <p>UI / UX Strategy</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end circle-home-container">
+      <div class="circle-home"></div>
+    </div>
+  </div>
 
 <% @projets.each do |projet| %>
-  <div class="slide-home">
+  <div class="slide-home align-items-center d-flex justify-content-center">
     <div class="slide-home-wrapper">
       <div class="home-projet-name-container home-projet-name">
         <%= projet.name.downcase %>
@@ -71,4 +104,5 @@
     </div>
   </div>
 <% end %>
+
 

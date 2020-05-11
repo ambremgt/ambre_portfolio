@@ -1,8 +1,6 @@
 .profile-picture {
-  width: 390px;
-  height: 390px;
-  border-radius: 50%;
-  box-shadow: 1px 12px 40px 5px rgba(0, 0, 0, 0.34);
+  width: 480px;
+  height: 630px;
   object-fit: cover;
 }
 
@@ -14,4 +12,23 @@
 
 .about-picture {
   object-fit: cover;
+}
+
+.home-cocktail-img {
+  object-fit: cover;
+  z-index: 2;
+}
+
+.home-students-img {
+  object-fit: cover;
+  z-index: 0;
+  position: relative;
+  bottom: 10vh;
+}
+
+.home-camera-img {
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  bottom: 10vh;
 }
