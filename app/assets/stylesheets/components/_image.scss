@@ -1,3 +1,11 @@
+// HOME
+
+.img-home {
+  width: 41vw;
+  height: 38vw;
+  margin-top: 5vw;
+}
+
 .profile-picture {
   width: 480px;
   height: 630px;
@@ -5,7 +13,7 @@
 }
 
 .projet-section {
-    margin-top: 5vh;
+    margin-top: 14vh;
 }
 
 .img-section::after {
@@ -18,10 +26,7 @@
   position: relative;
 }
 
-
-.about-picture {
-  object-fit: cover;
-}
+// HOME PROJETS IMG
 
 .home-cocktail-img {
   object-fit: cover;
