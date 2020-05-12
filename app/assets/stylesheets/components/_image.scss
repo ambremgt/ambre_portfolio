@@ -4,11 +4,20 @@
   object-fit: cover;
 }
 
-
-.image-block {
-  text-align: center;
-  z-index: 3;
+.projet-section {
+    margin-top: 5vh;
 }
+
+.img-section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.img-section {
+  position: relative;
+}
+
 
 .about-picture {
   object-fit: cover;
@@ -16,19 +25,41 @@
 
 .home-cocktail-img {
   object-fit: cover;
-  z-index: 2;
+  position: absolute;
+  left: 19vw;
+  top: -16vw;
+  width: 46vw;
+  height: 30vw;
+  z-index: 1;
+  transform: translate3d(0px, 25.3136px, 0px);
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .home-students-img {
   object-fit: cover;
+  float: right;
+  right: 0;
   z-index: 0;
-  position: relative;
-  bottom: 10vh;
+  height: 60vw;
+  width: 50vw;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .home-camera-img {
   object-fit: cover;
-  z-index: 1;
   position: relative;
   bottom: 10vh;
+  transform: translate3d(0px, -18.3052px, 0px);
+  position: absolute;
+  left: 9.01vw;
+  top: 11vw;
+  width: 50vw;
+  height: 36vw;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
 }

@@ -66,43 +66,28 @@
 </div>
 
   <div class="home-projects-details d-flex flex-column">
-    <h1 class="d-flex justify-content-end some-projects">SOME PROJECTS</h1>
+    <h1 class="d-flex justify-content-end some-projects">LAST PROJECTS</h1>
     <div class="d-flex justify-content-end red-text_italic wid">What I do?</div>
     <div class="red-text-min mx-auto home-step">
       <div style="display: flex;">
-        <p class="red-text-num">01. </p>
-        <p>Development</p>
-      </div>
+        <p class="red-text-num" style="margin-right: 11px;">01.</p><p>Development</p></div>
       <div style="display: flex;">
-        <p  class="red-text-num">02. </p>
-        <p>Visual Identity</p>
-      </div>
+        <p  class="red-text-num" style="margin-right: 11px;">02.</p><p>Visual Identity</p></div>
       <div style="display: flex;">
-        <p  class="red-text-num">03. </p>
-        <p>UI / UX Strategy</p>
-      </div>
+        <p  class="red-text-num" style="margin-right: 11px;">03.</p><p>UI / UX Strategy</p></div>
     </div>
     <div class="d-flex justify-content-end circle-home-container">
       <div class="circle-home"></div>
     </div>
   </div>
 
-<% @projets.each do |projet| %>
-  <div class="slide-home align-items-center d-flex justify-content-center">
-    <div class="slide-home-wrapper">
-      <div class="home-projet-name-container home-projet-name">
-        <%= projet.name.downcase %>
-        <div class="underline underline-name"></div>
-      </div>
-      <div class="home-projet-cover">
-        <%= link_to image_tag(projet.cover, class: 'image-cover-home'), projet_path(projet) %>
-      </div>
-      <div class="home-projet-category">
-        <div class="underline underline-category"></div>
-        <%= projet.category.capitalize %>
-      </div>
-    </div>
-  </div>
-<% end %>
+<section class="projet-section">
+  <section class="img-section">
+    <div class="home-cocktail-img" style="background-image: url(<%= asset_path 'cocktails.jpeg' %>);"></div>
+    <div class="home-camera-img" style="background-image: url(<%= asset_path 'camera.jpg' %>);"></div>
+    <div class="home-students-img" style="background-image: url(<%= asset_path 'students.jpeg'%>);"></div>
+  </section>
+  <div class="title-end-home">Oh la la.</div>
+</section>
 
 
