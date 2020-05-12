@@ -10,20 +10,79 @@
 }
 
 .home-bio {
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 100vh;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
   position: relative;
   width: 100vw;
   background-color: rgba(248, 245, 245, 1);
   z-index: -1;
 }
 
+// SOME PROJECTS
+
+.home-projects-details {
+  padding-top: 10vh;
+}
+
+.some-projects {
+  margin-right: 21%;
+  margin-top: 4%;
+}
+
+.wid {
+  margin-right: 14%;
+  margin-top: 2%;
+}
+
+.home-step {
+  line-height: 2.7;
+  position: relative;
+  left: 23%;
+}
+
+.circle-home {
+  border: 1px solid $light-red;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 30vw;
+  width: 30vw;
+}
+
+.circle-home-container {
+  position: absolute;
+  right: 11%;
+}
+
+.title-end-home {
+  z-index: 1;
+  position: relative;
+  font-weight: 800;
+  font-family: $serif;
+  left: 10vw;
+  max-width: 70vw;
+  margin-top: -200px;
+  font-size: 17vw;
+  line-height: 0.9;
+  margin-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // HOME SLIDE PROJECT
+
 .slide-home {
   width: 100vw;
   position: relative;
-  float: left;
 }
 
 .slide-home-wrapper {
@@ -112,50 +171,5 @@
   .slide-home-wrapper {
     margin-top: 20%;
   }
-}
-
-// HOME PROJECTS SECTION
-
-
-.home-projects-details {
-  padding-top: 10vh;
-}
-
-.some-projects {
-  margin-right: 21%;
-  margin-top: 4%;
-}
-
-.wid {
-  margin-right: 14%;
-  margin-top: 2%;
-}
-
-.step-home {
-  position: relative;
-  top: 13vh;
-  left: 67%;
-  line-height: 2.7;
-  max-width: 200px;
-}
-
-.home-step {
-  line-height: 2.7;
-  position: relative;
-  left: 23%;
-  margin-top: 2%
-}
-
-.circle-home {
-  border: 1px solid $light-red;
-  border-radius: 50%;
-  background-color: transparent;
-  height: 30vw;
-  width: 30vw;
-}
-
-.circle-home-container {
-  position: absolute;
-  right: 11%;
 }
 
