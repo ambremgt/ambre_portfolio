@@ -1,9 +1,9 @@
 // HOME
 
 .img-home {
-  width: 41vw;
-  height: 38vw;
-  margin-top: 5vw;
+  width: 46vw;
+  height: 41vw;
+  margin-top: 6vw;
 }
 
 .profile-picture {
@@ -12,8 +12,10 @@
   object-fit: cover;
 }
 
+// HOME PROJETS IMG
+
 .projet-section {
-    margin-top: 14vh;
+  margin-top: 10vh;
 }
 
 .img-section::after {
@@ -26,45 +28,71 @@
   position: relative;
 }
 
-// HOME PROJETS IMG
+.home-projet-detail {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: $ivoire;
+  transition-duration: 0.6s;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 3;
+}
+
+.home-projet-detail:hover .home-projet-detail-name {
+  opacity: 1;
+  transition-duration: 0.6s;
+  z-index: 3;
+}
+
+.home-projet-detail-name {
+  font-size: 160%;
+  font-weight: 500;
+  color: $ivoire;
+}
+
+.home-projet-detail-description {
+  font-size: 100%;
+  font-weight: 400;
+  color: $light-pink;
+}
 
 .home-cocktail-img {
-  object-fit: cover;
   position: absolute;
   left: 19vw;
-  top: -16vw;
   width: 46vw;
   height: 30vw;
-  z-index: 1;
+  z-index: 2;
   transform: translate3d(0px, 25.3136px, 0px);
   display: block;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.home-students-img {
-  object-fit: cover;
-  float: right;
-  right: 0;
-  z-index: 0;
-  height: 60vw;
-  width: 50vw;
-  display: block;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
 .home-camera-img {
-  object-fit: cover;
   position: relative;
   bottom: 10vh;
   transform: translate3d(0px, -18.3052px, 0px);
   position: absolute;
-  left: 9.01vw;
-  top: 11vw;
+  left: 9.07vw;
+  top: 28vw;
   width: 50vw;
   height: 36vw;
   display: block;
   background-size: cover;
   background-position: 50% 50%;
+  z-index: 1;
+}
+
+.home-students-img {
+  position: relative;
+  float: right;
+  right: 9.03vw;
+  z-index: 1;
+  height: 65vw;
+  width: 45vw;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  top: 17vh;
 }

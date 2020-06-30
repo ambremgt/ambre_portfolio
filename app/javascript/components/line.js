@@ -3,7 +3,7 @@
     if (lines) {
       for (const lines of lines) {
         window.addEventListener('scroll', () => {
-          if (window.scrollY >= window.innerHeight * 0.35) {
+          if (window.scrollY >= window.innerHeight * 0.65) {
             lines.classList.add('lines-red');
           } else {
             lines.classList.remove('lines-red');
