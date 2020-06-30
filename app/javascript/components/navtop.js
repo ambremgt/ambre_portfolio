@@ -4,7 +4,7 @@ const navtopOnScroll = () => {
   if (navtop) {
     for (const navtop of navtop) {
       window.addEventListener('scroll', () => {
-        if (window.scrollY >= window.innerHeight * 0.20) {
+        if (window.scrollY >= window.innerHeight * 0.10) {
           navtop.classList.add('navtop-transparent');
         } else {
           navtop.classList.remove('navtop-transparent');

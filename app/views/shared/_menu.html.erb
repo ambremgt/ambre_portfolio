@@ -1,22 +1,40 @@
+<div class="menus">
 
-<div class="contact-btn-area">
-  <%= link_to "Say hello", "#", class: "btn-main" %>
-</div>
-<div class="btn-home">
-  <%= link_to "", "/", class: "btn-transparent" %>
-</div>
-<div class="paris">
-  PARIS
-</div>
+  <div class="line-container">
+    <div class="lines lines-black line1"></div>
+    <div class="lines lines-black line5"></div>
+    <div class="lines-horizontal lines-black line-h1"></div>
+    <div class="lines-horizontal lines-black line-h2"></div>
+  </div>
 
-<div class="side-menu-area">
-  <div class="btn-rotate">
-    <%= link_to "About", "/about", class: "btn-main scroll" %>
+  <div class="social-container">
+    <ul class="list-social-icons">
+      <li><%= link_to "", 'https://github.com/ambremgt', target: '_blank', class: "fab fa-github fa-lg social-icon"%></li>
+      <li><%= link_to "", 'https://www.linkedin.com/in/ambre-margerit-33441ba8/', target: '_blank', class: "fab fa-linkedin-in fa-lg social-icon"%></li>
+      <li><%= link_to "", 'https://dribbble.com/Ambremgt', target: '_blank', class: "fab fa-dribbble fa-lg social-icon"%></li>
+    </ul>
   </div>
-  <div class="btn-rotate">
-    <%= link_to "Process", "/process", class: "btn-main scroll" %>
+
+  <div class="contact-btn-area">
+    <%= link_to "Say hello", "#", class: "btn-main" %>
   </div>
-  <div class="btn-rotate">
-    <%= link_to "Work", "/work", class: "btn-main scroll" %>
+  <div class="btn-home">
+    <%= link_to "", "/", class: "btn-transparent" %>
   </div>
+  <div class="paris">
+    PARIS
+  </div>
+
+  <div class="side-menu-area">
+    <div class="btn-rotate">
+      <%= link_to "About", "/about", class: "btn-main scroll" %>
+    </div>
+    <div class="btn-rotate">
+      <%= link_to "Process", "/process", class: "btn-main scroll" %>
+    </div>
+    <div class="btn-rotate">
+      <%= link_to "Work", "/work", class: "btn-main scroll" %>
+    </div>
+  </div>
+
 </div>
